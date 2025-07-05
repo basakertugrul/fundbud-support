@@ -1,8 +1,4 @@
-.header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 20px;
-            background: linear-gradient(135deg, #8C4955 0<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,62 +11,121 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            color: #333;
+            color: #202732;
+            background-color: #f8f9fa;
         }
         .header {
             text-align: center;
             margin-bottom: 40px;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            background: linear-gradient(135deg, #8C4955 0%, #8CA0B6 100%);
             color: white;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(140, 73, 85, 0.3);
         }
         .section {
             margin-bottom: 30px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            border-left: 5px solid #8CA0B6;
+            box-shadow: 0 4px 15px rgba(32, 39, 50, 0.1);
         }
         .contact-info {
-            background: #e8f5e8;
-            border-left-color: #28a745;
+            background: linear-gradient(145deg, #84B058, #84B058);
+            border-left-color: #84B058;
+            color: white;
+        }
+        .contact-info h2 {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+        }
+        .contact-info p {
+            color: white;
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         h2 {
-            color: #495057;
-            border-bottom: 2px solid #dee2e6;
-            padding-bottom: 10px;
+            color: #202732;
+            border-bottom: 2px solid #8CA0B6;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
         }
         .faq-item {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #8C4955;
         }
         .faq-question {
             font-weight: bold;
-            color: #495057;
-            margin-bottom: 5px;
+            color: #8C4955;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        .faq-item p {
+            color: #202732;
+            margin: 0;
         }
         .contact-button {
             display: inline-block;
-            padding: 12px 24px;
-            background: #667eea;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #8C4955, #8CA0B6);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(140, 73, 85, 0.3);
         }
         .contact-button:hover {
-            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(140, 73, 85, 0.4);
+        }
+        .contact-info .contact-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+        }
+        .contact-info .contact-button:hover {
+            background: white;
+            color: #84B058;
+        }
+        ul {
+            color: #202732;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: #8CA0B6;
+            background: #202732;
+            border-radius: 12px;
+        }
+        footer p {
+            margin: 5px 0;
         }
         @media (max-width: 600px) {
             body {
-                padding: 10px;
+                padding: 15px;
             }
             h1 {
-                font-size: 2em;
+                font-size: 2.2em;
+            }
+            .section {
+                padding: 20px;
+            }
+            .header {
+                padding: 25px;
             }
         }
     </style>
@@ -147,7 +202,7 @@
         <a href="mailto:fundbud2025@gmail.com?subject=Feature Request" class="contact-button">Suggest Feature</a>
     </div>
 
-    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #6c757d;">
+    <footer>
         <p>&copy; 2025 FundBud. All rights reserved.</p>
         <p>Made with ❤️ for better budget tracking</p>
     </footer>
